@@ -10,7 +10,7 @@ int main()
     string name;
     cout<<"Enter your name: ";
     cin>>name;
-    string text = "Hello! My name is "+name;
+    string text = "Hello! Your name is "+name;
 
     ofstream write("Sample.txt"); 
     write<<text;

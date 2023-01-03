@@ -14,13 +14,13 @@ int main()
     //new keyword
     //************
     // In C++, the new keyword is used to dynamically allocate memory from the heap (also known as the free store).
-    int* p = new int(40);  //Here we are performing both (int x=40; & int *p = &x;) lines of code in one line of code. Creating a block for storing an int value in the heap memory --> storing value 40 --> stroring the address of this block inside a int-pointer variable p.
+    int *p = new int(40);  //Here we are performing both (int x=40; & int *p = &x;) lines of code in one line of code. Creating a block for storing an int value in the heap memory --> storing value 40 --> storring the address of this block inside a int-pointer variable p.
     cout<<"The value at address stored inside p is "<<*p<<endl;
 
-    float* q = new float(40.87);  //Storing the address if float(40) inside pointer variable q.
+    float *q = new float(40.87);  //Storing the address if float(40) inside pointer variable q.
     cout<<"The value at address stored inside q is "<<*q<<endl;
 
-    int* arr = new int[3];  //Creating an array of 3 integers dynamically and storing its address inside pointer variable 'arr'
+    int *arr = new int[3];  //Creating an array of 3 integers dynamically and storing its address inside pointer variable 'arr'
 
     //Storing values inside the dynamically created array.
     arr[0]=10;      

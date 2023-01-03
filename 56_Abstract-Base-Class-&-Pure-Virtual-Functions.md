@@ -29,7 +29,7 @@ class CWH {
         Abstract Base Class:
         *******************
         - A base class which contains atleast one Pure Virtual Function is called an Abstract Base Class.
-        - An Abstract Base Class is created with the sile purpose of creating more Derived classes from it. And, if and when we create a Derived class from the Abstract Base Class, we must always provide the definitions for all the Pure Virtual Functions mentioned within the Abstract Base class.
+        - An Abstract Base Class is created with the sole purpose of creating more Derived classes from it. And, if and when we create a Derived class from the Abstract Base Class, we must always provide the definitions for all the Pure Virtual Functions mentioned within the Abstract Base class.
         - We cannot create objects from an Abstract Base Class.
         - Here, class CWH is an example of an Abstract Base Class.
         */
