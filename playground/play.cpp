@@ -1,8 +1,9 @@
-#include <iostream>
-using namespace std; 
+#include<iostream>
 
-// Driver Code
-int main()
-{
+ // using namespace std;
+
+ int main() {
+    // cout << "Hello World";
+    std::cout<<"Hello World";
     return 0;
-}
+ }

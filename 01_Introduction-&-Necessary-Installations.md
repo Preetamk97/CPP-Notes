@@ -1,4 +1,4 @@
-![](Img_Files/chapter1/Course%20Poster.png)
+**C++ (sometimes abbreviated as CPP)** is a **high-level general-purpose object-oriented programming language** created by Danish computer scientist **Bjarne Stroustrup**.
 
 # Learning Objectives:
 
@@ -14,16 +14,13 @@
 ![](Img_Files/chapter1/Giving-Instructions-In-Real-Life.png)
 ![](Img_Files/chapter1/Hindi-Language.png)
 ![](Img_Files/chapter1/English-Language.png)
-![](Img_Files/chapter1/Talking-to-Computer-Laptop-Mobile.png)
 ![](Img_Files/chapter1/donot-understand-human-language.png)
 ![](Img_Files/chapter1/machine-understands-binary.png)
-![](Img_Files/chapter1/why-only-0-1.png)
 ![](Img_Files/chapter1/1.png)
 ![](Img_Files/chapter1/0.png)
 ![](Img_Files/chapter1/high-voltage-1-low-voltage-0.png)
 ![](Img_Files/chapter1/decimal-to-binary.png)
 ![](Img_Files/chapter1/every-character-to-binary.png)
-![](Img_Files/chapter1/binary-confusion.png)
 ![](Img_Files/chapter1/high-level-languages.png)
 ![](Img_Files/chapter1/high-level-languages-c++.png)
 ![](Img_Files/chapter1/write-code-in-c++.png)
@@ -100,7 +97,9 @@
 
 # Writing our first C++ program
 
-**playground.cpp**:
+Create a new file named **play.cpp** and add the following code to it.
+
+**play.cpp**:
 ```cpp
  #include<iostream>
 
@@ -113,7 +112,7 @@
  }
 ```
 **To execute the file:**
-- open a VS Code Terminal.
+- open a VS Code Terminal (Keyboard Shortcut : ***ctrl + `*** ).
 - type "g++ play" and press Tab to autocomplete. ENTER. This creates an "a.exe" file.
 - In terminal, type a --> TAB (autocomplete) --> ENTER.
 - The file executes.
