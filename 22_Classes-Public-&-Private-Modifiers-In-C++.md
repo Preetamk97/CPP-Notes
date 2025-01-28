@@ -43,7 +43,7 @@ int main () {
     harry.e = 46;
 
     // harry.a = 1;
-    // If execute the above line of code, we will get an error.
+    // If we execute the above line of code, we will get an error.
     // This is because variable/attribute `int a` is declared as `Private` inside the Employee class. 
     // So, we cannot set the value of variable/attribute `int a` + neither can we print/use its value directly (as harry.a) --- inside a function that does not belong to the Employee class (int main() does not belong to Employee class.)
     // This applies to all 3 Private variables of Employee class i.e int a, b, c. All of these are private variables the values of which cannot be set directly (harry.a = 1;) + neither can we print/use its value directly (as harry.a) --- inside any function that does not belong to the class (Employee).

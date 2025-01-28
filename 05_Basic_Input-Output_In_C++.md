@@ -22,8 +22,8 @@ int main () {
     return 0;
 }
 
-// << is called the Insertion Operator.
-// >> is called the Extraction Operator.
+// << is called the Insertion Operator (Inserts data into an output stream, such as cout.).
+// >> is called the Extraction Operator (Extracts data from an input stream, such as cin.).
 ```
 
 ![](Img_Files/chapter5/reserved-keywords.png)

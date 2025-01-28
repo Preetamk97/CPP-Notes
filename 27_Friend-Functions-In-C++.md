@@ -16,7 +16,7 @@ class Complex {
         // Friend Function: An external function which can use/access the private variables of any object belonging to the class.
         // Friend Function is not a member function of the class. So, we cannot directly use it on the objects of the class (i.e. Object.sumComplex(o1,o2)).
         friend Complex sumComplex(Complex o1, Complex o2);
-        // INt the above code, complex is the return type of the method.
+        // In the above code, complex is the return type of the method.
 
 };
 
@@ -54,5 +54,5 @@ int main () {
 //3. c3 = sumComplex(c1, c2)  ===> Valid Code.
 //4. Can be invoked without the help of any object.
 //5. Usually contains objects as arguments.
-//6. Can be declared inside public or private area of the class  ===> Output will be same.
+//6. Can be declared inside public or private area of the class  ===> It doesn'nt make a difference.
 ```

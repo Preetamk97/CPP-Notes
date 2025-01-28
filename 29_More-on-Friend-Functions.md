@@ -1,4 +1,4 @@
-# Example 1: Adding an external functionas friend function of a class.
+# Example 1: Adding an external friend function to a class.
 
 ```cpp
 // More on Friend Functions
@@ -52,7 +52,7 @@ int main()
 }
 ```
 
-# Example 2: Adding an external functionas friend function of a class.
+# Example 2: Adding an external friend function to a class.
 
 ```cpp
 // More on Friend Functions
@@ -117,4 +117,3 @@ int main()
     return 0;
 }
 ```
-

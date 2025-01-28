@@ -1,5 +1,5 @@
 ```cpp
-// A Simple Program to Dermostrate Function Overloading
+// A Simple Program to Demonstrate Function Overloading
 
 #include <iostream>
 using namespace std;

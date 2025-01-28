@@ -6,19 +6,18 @@ class A
 {
     int a;
 
-public:
-    A setData(int a)
-    // void setData(int a)
-    {
-        this->a = a; //'this' keyword is a pointer, which points to the object which is invoking the member function.
+    public:
+        A setData(int a)
+        {
+            this->a = a; //'this' keyword is a pointer, which points to the object which is invoking the member function.
 
-        return *this;  //this pointer can also be used to return the object upon which this function is invoked.
-    }
+            return *this;  //this pointer can also be used to return the object upon which this function is invoked.
+        }
 
-    void getData(void)
-    {
-        cout << "The value of a is " << a << endl;
-    }
+        void getData(void)
+        {
+            cout << "The value of a is " << a << endl;
+        }
 };
 
 // Driver Code

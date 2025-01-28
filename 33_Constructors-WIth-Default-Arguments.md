@@ -18,7 +18,8 @@ class Simple {
 };
 // Driver Code:
 int main()
-{   Simple o1(5, 6, 7); 
+{   
+    Simple o1(5, 6, 7); 
     o1.print(); 
     // a = 5  |  b = 6  |  c = 7
     // If we provide values for all of the constructor arguments, then the constructor prioritizes them over the default provided contructor arguments and overides them.

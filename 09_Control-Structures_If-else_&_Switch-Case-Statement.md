@@ -43,7 +43,7 @@ int main() {
 ## Basic Syntax:
 
 ```cpp
-    //switch -- emmet
+    //switch -- emmet abbreviation in VS CODE
     switch (expression)
     {
     case /* constant-expression */:

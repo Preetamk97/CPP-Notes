@@ -1,4 +1,4 @@
-# Member Friend Functions in C++:
+# Friend Functions belonging to a different Class in C++:
 
 ```cpp
 // In this program, we have made two classes Calculator & Complex. Two methods of Calculator class (sumReal() & sumcomplex()) use Complex class objects (o1 & o2) as arguments and accesses their private member variables (o1.a/o2.a & o1.b/o2.b). So, we will declare the methods (sumReal() & sumcomplex()) as friend functions inside the Complex class.

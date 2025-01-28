@@ -12,7 +12,7 @@
 
 // Classes = Structures + more.
 
-// Classes can have methods and propertise.
+// Classes can have methods and propertise (attributes).
 
 // Classes can make few members as private and few as public.
 
@@ -33,18 +33,17 @@ class Employee {
 //-----------------------------
 
 #include <iostream>
-#include <string> // Necessary import for creating string.at() method.
+#include <string> // Necessary import for creating string type variables.
 using namespace std;
 
 class Binary
 {
-    // Every member in a class is by default 'Private' otherwise specifieed 'public' explicitly.
+    // Every member in a class is by default 'Private' otherwise specified 'public' explicitly.
     // So the string variable member 'num' declared below is private by default and hence cannot be accesed inside `int main()` function directly (object.num).
     string num;
     void chk_bin();     // Method to check if the entered number is binary or not.
                         // Cannot access directly inside driver code (like Object.chk_bin()).
 public:
-    // string num;
     void read();            // Method to take a number from the user.   
     void ones_compliment(); // Method to convert the 0's to 1's and 1's to 0's.
     void display();         // Method to print/display the 'num' variable.
@@ -108,7 +107,7 @@ int main()
     b.ones_compliment();  // chk_bin() is nested inside ones_compliment().
 
     // cout << b.num << endl;
-    // above line of code will work only if the member 'num' was made public inside the class Binary. 
+    // above line of code will work only if the member 'num' was not made public inside the class Binary. 
     // Alternative way - Using display() method.
     b.display();
 

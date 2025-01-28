@@ -28,7 +28,7 @@ int main() {
 The two manipulators that we need to know about are
 
 1.  endl --- We already know its use.
-1.  setw(num) ---- Comes from `<manip>` Header File.
+1.  setw(num) ---- Comes from `<iomanip>` Header File.
 
 Study the code below to see the use of **setw(num)** manipulator.
 
@@ -47,7 +47,7 @@ int main() {
     cout << "The value of a is " << b << endl;
     cout << "The value of a is " << c << endl;
 
-    // *************** Using setw(num) Function from <manip> Header File ****************
+    // *************** Using setw(num) Function from <iomanip> Header File ****************
     // setw(num) function basically makes our output Right Justified.
     // Bigger the value of num is --- more the output is going to shift rightwards.
     // See the Output to see the difference in Outputs before and after using setw.

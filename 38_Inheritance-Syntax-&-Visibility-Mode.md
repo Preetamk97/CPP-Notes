@@ -4,21 +4,25 @@ using namespace std;
 
 // Base Class
 class Employee {
+
    public:
       int id;
       float salary;
+
       Employee(int i, float s){
          id = i;
          salary = s;
       };
-      Employee(){}; // When we create an object of the Programmer class (defined below) - before invoking its own constructor 'Programmer(int i, float s){}' - first the compiler will run the default constructor of the base class Employee 'Employee(){};' - from which the class Programmer is derived -- therefore defining a default constructor is important if we are going to create any subclass of the current class in future.
+
+      Employee(){}; 
+      // When we create an object of the Programmer class (defined below) - before invoking its own constructor 'Programmer(int i, float s){}' - first the compiler will run the default constructor of the base class Employee 'Employee(){};' - from which the class Programmer is derived -- therefore defining a default constructor is important if we are going to create any subclass of the current class in future.
 };
 
 //Derived Class Syntax
 //---------------------
 
 /*
-class {{derived-class-name}} : {{visibility-mode}} {{base-class-name}}
+class {derived-class-name} : {visibility-mode} {base-class-name}
 {
    // class code
 }
@@ -30,8 +34,8 @@ Notes:
 1. There are 3 visibilty modes - public, private, & protected.
 2. Default visibility mode - If no visibility mode is specified - is Private.
 3. Private Visibility Mode: Public members of the base class becomes - private members of the derived class.
-3. Public Visibility Mode: Public members of the base class becomes - public members of the derived class.
-4. Private members of the base class can never be inherited by a derived class -- they are private.
+4. Public Visibility Mode: Public members of the base class becomes - public members of the derived class.
+5. Private members of the base class can never be inherited by a derived class -- they are private.
 */
 
 // Creating a class Programmer - inheriting from base class Employee 

@@ -64,7 +64,7 @@ using namespace std;
 int main () {
     int marks[] = {123, 456, 789, 159};
     for (int i = 0; i < 4 ; i++) {
-        cout << "Marks in array position " << i << " are " << marks[i] << endl;
+        cout << "Mark in array position " << i << " is " << marks[i] << endl;
     }
     return 0;
 }
@@ -93,15 +93,15 @@ int main () {
 
     // Making a pointer variable for the just declared array.
     int* p = marks;
-    // Note: For Arrays, you dont have to write as '&marks'.
+    // Note: For Arrays, you dont have to write as '&marks'. Because, in C++, the arrays theselves work as pointers who store the addresses of the variables that are listed within the array.
 
     cout << "Value of marks[0] is " << *p << endl;      // First Element.
     cout << "Value of marks[1] is " << *(p+1) << endl;  // Second Element.
     cout << "Value of marks[2] is " << *(p+2) << endl;  // Third Element.
     cout << "Value of marks[3] is " << *(p+3) << endl;  // Fourth Element.
   
-    cout << "Value of *(p++) is " << *(p++) << endl;    // First Element. //print *p then increase to *(p+1)
-    cout << "Value of *(++p) is " << *(++p) << endl;    // Third Element.  //increase from *(p+1) to *(p+2) then print *(p+2)
+    cout << "Value of *(p++) is " << *(p++) << endl;    // First Element. //print *p then increment the pointer to *(p+1)
+    cout << "Value of *(++p) is " << *(++p) << endl;    // Third Element.  //increment the pointer from *(p+1) to *(p+2) then print *(p+2)
 
     return 0;
 }

@@ -12,6 +12,8 @@ int simpleInterest(int principal, int time, int rate = 5) {
 // An argument which assumes a default value if no value for it is passed while calling the function inside `int main()` function (ex - simpleInterest(2000,2)) --- is called a Default Argument.
 // In this case, while calling the function simpleInterest() if no value is passed for the `int rate` argument (ex - simpleInterest(2000,2)) then the function will assume the value for rate = 5 on itself and return the calculation accordingly.
 
+// ** Important ** 
+//*******************
 // Defaut Arguments should always mentioned/passed at the last. ex - simpleInterest(int principal, int time, int rate = 5)
 
 int main() {
@@ -32,11 +34,24 @@ int main() {
 
 # Constant Argument:
 
-Constant arguments are used when you don’t want your values to be changed or modified by the function. An example of constant arguments is shown in Code Snippet below.
+In C++, the `const` keyword in the function parameter list means that the parameter cannot be modified within the function. However, it does not prevent the caller from passing a different value to the function. An example of the concept is shown in Code Snippet below.
 
 ```cpp
-int strlen(const char *p){
+#include <iostream>
+using namespace std;
 
+float circle_area;
+
+int area_of_circle(float radius, const float pi = 3.14){
+    // value of 'pi' cannot be modified within this function.
+    return pi * radius * radius;
+}
+
+int main(){
+    circle_area = area_of_circle(2.3, 56); 
+    // In this code, pi is declared as const in the function area_of_circle, which means that within the function, pi cannot be modified. 
+    //However, when you call area_of_circle(2.3, 56), the value 56 is passed to the function and used as pi.
+
+    cout << circle_area << endl; // Output will be based on pi = 56
 }
 ```
-As shown in Code Snippet 4, we created a `strlen` function which takes a constant argument `*p`. As the argument is constant so its value won’t be modified.

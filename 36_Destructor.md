@@ -3,7 +3,7 @@
 using namespace std;
 
 // Global Variable
-// Its value will be same -- at one time -- for all the objects of the below class Number .
+// Its value will be same -- at one time -- for all the objects of the below class Number.
 int count = 0;
 
 class Number {

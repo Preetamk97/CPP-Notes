@@ -8,7 +8,8 @@ class Employee {
     static int count;  
     // When a static data member is created, there is only a single copy of the data member which is shared between all the objects of the class.
     // At any instant, the value of 'static int count' variable will be same for every object within the Employee class.
-    // static member variables are not initialized inside the class but outside of it.
+    // static member variables are NOT ININTIALIZED INSIDE THE CLASS but outside of it.
+    // Default value of a static member variable is 0.
     
     int id;
     // If the data members are not static then every object has an individual copy of the data member and it is not shared.
@@ -30,9 +31,12 @@ class Employee {
         static void getCount() {
             // cout << id; // Cannot access non static member variable inside a static function.
             cout << "The value of count is " << count << endl;
+
+            // We can oly access static variables inside a static function.
         }
-        // When a static method is created, they become independent of any object and are directly associated with the class. 
-        // Static methods can only access static data members and static methods.
+        // When a static method is created, they become independent of any object and are directly associated with the class (). That means, we can call a static function directly using the name of the class itself 
+        // ==> Employee ::getCount() 
+        // In C++, static methods can only access static data members and other static methods of the class. 
         // “getCount” function is static, so if we try to access any data members or member functions which are not static the compiler will throw an error.
 };
 
@@ -51,64 +55,17 @@ int main()
     // harry.count = 1;   // Cannot do this as count is private member.
     // harry.id = 1;    // Cannot do this as id is private member.
 
-    harry.setData();
-    harry.getData();
-    // Calling a static function using class name.
+    harry.setData();    // count will be 1
+    harry.getData();    // count will be 1
+    Employee ::getCount(); // Calling a static function using class name.
+
+    rohit.setData();    // count will be 2
+    rohit.getData();    // count will be 2
     Employee ::getCount();
 
-    rohit.setData();
-    rohit.getData();
-    Employee ::getCount();
-
-    pritam.setData();
-    pritam.getData();
-    Employee ::getCount();
-
-    return 0;
-}
-```
-
-# Uncommented Code:
-
-```cpp
-#include <iostream>
-using namespace std;
-
-class Employee {
-    static int count;  
-    int id;
-
-    public:
-        void setData(){
-            cout << "Enter id: " << endl;
-            cin >> id;
-            count++;    
-        }
-        void getData() {
-            cout << "Id of this employee is : " << id << endl;
-            cout << "Count of this employee is " << count << endl;
-        }
-        static void getCount() {.
-            cout << "The value of count is " << count << endl;
-        }
-};
-
-int Employee :: count;  
-
-int main()
-{
-    Employee harry, rohit, pritam;
-
-    harry.setData();
-    harry.getData();
-    Employee ::getCount();
-
-    rohit.setData();
-    rohit.getData();
-    Employee ::getCount();
-
-    pritam.setData();
-    pritam.getData();
+    pritam.setData();  // count will be 3
+    pritam.getData();  // count will be 3
+    rohit.getData();   // count will be 3
     Employee ::getCount();
 
     return 0;

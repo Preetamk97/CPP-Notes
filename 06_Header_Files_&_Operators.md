@@ -63,11 +63,31 @@ int main() {
     // x *= 5   ===>   x = x * 5
     // x /= 5   ===>   x = x / 5
     // x %= 5   ===>   x = x % 5
-    // x &= 5   ===>   x = x & 5
-    // x |= 5   ===>   x = x | 5
+    // x &= 5   ===>   x = x & 5  (& = bitwise AND operator)
+                                    // 0100 (x = 4)
+                                    // AND
+                                    // 0101 (5)
+                                    // ----
+                                    // 0100 (x = 4)
+                                    // Hence the value of x gets updated to x = 4
+    // x |= 5   ===>   x = x | 5  (| = bitwise OR operator)
+                                    // 0100 (x = 4)
+                                    // OR
+                                    // 0101 (5)
+                                    // ----
+                                    // 0101 (x = 5)
+                                    // Hence the value of x gets updated to x = 5
     // x ^= 5   ===>   x = x ^ 5
-    // x >>= 5   ===>   x = x >> 5
-    // x <<= 5   ===>   x = x << 5
+    // x >>= 2   ===>   x = x >> 2  (>> = bitwise RIGHT SHIFT operator)
+                                    // 0100 (x = 4)
+                                    // >> 2 (Right Shift each bit to 2 places)
+                                    // ----
+                                    // 0001 (x = 1)
+    // x <<= 1   ===>   x = x << 1  (<< = bitwise LEFT SHIFT operator)
+                                    // 0100 (x = 4)
+                                    // << 1 (Left Shift each bit to 1 places)
+                                    // ----
+                                    // 1000 (x = 8)
 
     // Comparison Operators:
     //****************************
@@ -87,7 +107,7 @@ int main() {
     // || ---> OR Operator
     // ! --->< Not Operator
     cout <<"The value of ((a==b) && (a>b)) is "<< ((a==b) && (a>b)) << endl; // 0
-    cout <<"The value of ((a==b) || (a>b)) is "<< ((a==b) || (a>b)) << endl; // 0
+    cout <<"The value of ((a==b) || (a<b)) is "<< ((a==b) || (a<b)) << endl; // 1
     cout <<"The value of (!(a==b)) is "<< (!(a==b)) << endl; // 1
 
     return 0;
@@ -100,5 +120,4 @@ int main() {
 
 // Alt + Mouse Clicks.
 // Shift + Alt + Down Key
-// Alt Z
 ```

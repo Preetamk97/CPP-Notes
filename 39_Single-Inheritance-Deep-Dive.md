@@ -11,7 +11,7 @@ class Base {
       int getData2();
 };
 
-void Base :: setData(void){   // This function is public -- has access to both private variable data1 & public variabble data2 of Base class.
+void Base :: setData(void){   // This function is public & has access to both private variable data1 & public variabble data2 of Base class.
    data1 = 10;
    data2 = 20;
 }
@@ -89,15 +89,21 @@ int Base :: getData2(void){
 }
 
 class Derived : private Base {   // Inheriting Base class public members as private members of Derived class.
+   // int data2;
+   // void setData();
+   // int getData1();
+   // int getData2();
    int data3;
    public:
-      void process();  // Can use data2, setData(), getData1(), getData2()
+      void process();
       void display();  // Can use data2, setData(), getData1(), getData2()
 };
 
 void Derived :: process (void){
-   setData(); // setData() (originally public method of Base class) is inherited as a private member of Derived class -- can be used inside process() method directly.
-   // This will set the value of data1 (private) & data2 (public).
+   setData(); 
+   // setData() (originally public method of Base class) is inherited as a private member function of the Derived class. 'setData()' function can be used indirectly by putting it inside the 'process()' method.
+   // Since 'setData()' is originally a member function of the Base class, it HAS ACCESS TO BOTH data1 (private) & data2 (public) variables of the Base class.
+   // 'setData()' will set the value of both data1 (private) & data2 (public) variables of the base class.
    data3 = data2 * getData1();
 }
 
@@ -112,11 +118,11 @@ int main()
 {  
    Derived der;
 
-   // der.setData();  // Since setData() (originally public method of Base class) is inherited as a private member of Derived class --- therefore cannot be used outside the Derived class -- i.e inside 'int main()' method directly.
+   // der.setData();  // Since setData() (originally public method of Base class) is inherited as a private member of Derived class --- therefore it cannot be used  outside the Derived class -- i.e inside 'int main()' method directly.
    // Instead we can call setData() method inside process() method itself.
 
-   der.process(); // process() is a public member of Derived class -- can be used directly inside 'int main()'
-   der.display();  // display() is a public member of Derived class -- can be used directly inside 'int main()'
+   der.process(); // process() is a public member function of the Derived class -- hence can be used directly inside 'int main()' function
+   der.display();  // display() is a public member function of the Derived class -- hence can be used directly inside 'int main()' function.
 
    return 0;
 }

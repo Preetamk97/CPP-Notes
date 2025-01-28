@@ -14,6 +14,7 @@ class BankDeposit {
         BankDeposit(){};   // default constructor of the “BankDeposit” class is declared. 
         // When we have parametrized constructors in our class, we will not be able to create non-parameterized objects of BankDeposit class (like BankDeposit deposit;), unless we also explicitly add a parameterless contructor - to instruct the program what to do when it is called.
 
+        // Constructor Overloading
         // 2ND parameterized constructor of the “BankDeposit” class is declared which takes three parameters “p”, “y”, and “r”. The main thing to note here is that the parameter “r” is of a float data type.
         BankDeposit(int p, int y, float r){  // interestRate can be value like 0.4, 0.8, 0.11 etc.
             principal = p;
@@ -24,11 +25,12 @@ class BankDeposit {
             for (int i = 0; i < years; i++)
             {
                 /* code */
-                returnAmount = returnAmount + (returnAmount*interestRate); // Compound Interest
+                returnAmount = returnAmount + (returnAmount*interestRate/100); // Compound Interest
             }
             
         }
 
+        // Constructor Overloading
         // 3RD parameterized constructor of the “BankDeposit” class is declared which takes three parameters “p”, “y”, and “R”. The main thing to note here is that the parameter “R” is of an integer data type.
         BankDeposit(int p, int y, int R){  // interestRate can be value like 40%, 80%, 11% etc.
             principal = p;

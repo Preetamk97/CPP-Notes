@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-// Creating a Struct.
+// Creating a Structure.
 // emmet --- struct
 typedef struct employee {
     int empId;
@@ -16,10 +16,13 @@ typedef struct employee {
 
 // `struct` keyword allows us to create a user defined datatype (in this case employee) and a template of propeties for creating the datatype variables each of which will have its own set of property values.
 
-// We can give a short name (ep) to our entire struct block even without using the `typedef` keyword.  
+// We can give a short name (ep) to our entire struct block (Optional). This will allow us to create instances of the struct using this short name (ep) instead of the long name (struct employee).
+
+// However to use this short name (ep) we need to write 'typedef' infront of 'struct' keyword. 
+  
 
 int main () {
-    // Creating instances of the Struct.
+    // Creating an instance of the 'Struct employee'.
     struct employee harry;
 
     // We can also create instances of a Struct like this (below).
@@ -59,7 +62,6 @@ using namespace std;
 
 // In ancient times, Barter System was the method of transactions for purchasing something.
 // Lets say, we went to buy something. Now we can either pay the shopkeeper in rice (kgs) or money (pounds) or cows(no.of cows).
-// Union kind of works based on the same logic.
 
 // Creating a Union.
 union money {
@@ -130,9 +132,12 @@ enum week { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
 
 int main()
 {
-    week today;
-    today = Wednesday;
-    cout << "Day " << today+1 << endl;
+    enum week today; // Creating an instance of 'enum week' named 'today'.
+    today = Wednesday; // Whenever we create an instance of an enum, we can only assign values that are already listed under the definintion of the enum to it. In this case, we can only assign values - Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday to 'today'.
+
+    // This also implies that now the numerical value of 'today' is 3, as Wednesday lies in the 3rd position of the enum definition starting from position value 0. 
+    cout << "Value of today variable is :" << today << endl;
+
     return 0;
 }
 ```

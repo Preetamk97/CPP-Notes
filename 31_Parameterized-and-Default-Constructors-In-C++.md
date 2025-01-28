@@ -56,7 +56,7 @@ class Point {
         }
         
         void displayPoint(){
-            cout << "The point is ("<<x<<", "<<y<<")"<<endl;
+            cout << "The point is ("<< x <<", "<< y <<")"<<endl;
         }
 };
 

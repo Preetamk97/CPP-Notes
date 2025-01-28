@@ -87,5 +87,5 @@ int main()
 //2. They are only accessed by object pointers.
 //3. Virtual functions can be a friend of another class.
 //4. A virtual function in a base class might never be used.
-//5. If a virtual function (of Base class) is not defined/overrriden in the derived class, then on calling the function from a 'Base class object pointer' --> it will simply run the original virtual function (of the Base class).
+//5. If a virtual function (of Base class) is not defined/overridden in the derived class, then on calling the function from a 'Base class object pointer' --> it will simply run the original virtual function (of the Base class).
 ```

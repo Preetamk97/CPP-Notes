@@ -10,8 +10,8 @@
 
 - The concept of reusability in C++ is supported using inheritance
 - We can reuse the properties of an existing class by inheriting it
-- The existing class is called a base class
-- The new class which is inherited from the base class is called a derived class
+- The existing class is called a Base class or a Parent class.
+- The new class which is inherits from the base class is called a Derived class or Children class.
 - Reusing classes saves time and money
 - There are different types of inheritance in C++
 
@@ -27,14 +27,14 @@
 
 # Single Inheritance in C++
 
-Single inheritance is a type of inheritance in which a derived class is inherited with only one base class. 
+Single inheritance is a type of inheritance in which one derived class gets inherited from only one base class. 
 For example, we have two classes “employee” and “programmer”. If the “programmer” class is inherited from the “employee” class which means that the “programmer” class can now implement the functionalities of the “employee” class.
 
 ![](Img_Files/chapter37/single-inheritance.png)
 
 # Multiple Inheritances in C++
 
- Multiple inheritances are a type of inheritance in which one derived class is inherited with more than one base class. For example, we have three classes “employee”, “assistant” and “programmer”. If the “programmer” class is inherited from the “employee” and “assistant” class which means that the “programmer” class can now implement the functionalities of the “employee” and “assistant” class.
+ Multiple inheritance is a type of inheritance in which one derived class inherits from more than one base classes. For example, we have three classes namely- “employee”, “assistant” and “programmer”. If the “programmer” class is inherited from both the “employee” and “assistant” classes - this means that the “programmer” class can now implement the functionalities of both the “employee” and “assistant” classes.
 
  ![](Img_Files/chapter37/multiple-inheritance.png)
 
@@ -52,6 +52,6 @@ Multilevel inheritance is a type of inheritance in which one derived class is in
 
 # Hybrid Inheritance in C++
 
-Hybrid inheritance is a combination of various types of inheritance like multiple, simple, and hierarchical inheritance. For instance, the combination of single and hierarchical inheritance. Therefore, hybrid inheritance is also known as multipath inheritance. For example, we have four classes “animal”, “mammal”, “bird”, and “bat”. If “mammal”  and “bird” classes are inherited from the “animal” class and “bat” class is inherited from “mammal” and “bird” classes which means that “mammal” and “bird” classes can now implement the functionalities of “animal” class and “bat” class can now implement the functionalities of “mammal” and “bird” classes.
+Hybrid inheritance is a combination of various types of inheritances such as single,multiple, hierarchical and Multilevel inheritance. Therefore, hybrid inheritance is also known as multipath inheritance. For example, we have four classes “animal”, “mammal”, “bird”, and “bat”. If “mammal”  and “bird” classes are inherited from the “animal” class and “bat” class is inherited from “mammal” and “bird” classes which means that “mammal” and “bird” classes can now implement the functionalities of “animal” class and “bat” class can now implement the functionalities of “mammal” and “bird” classes.
 
 ![](Img_Files/chapter37/hybrid-inheritance.png)

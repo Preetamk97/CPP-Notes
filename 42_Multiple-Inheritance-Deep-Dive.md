@@ -3,7 +3,7 @@
 # Syntax of Multiple Inheritance
 
 ```cpp
-class {{derived-class-name}} : {{visibility-mode}} {{base-class-1}}, {{visibility-mode}} {{base-class-2}}
+class {derived-class-name} : {visibility-mode} {base-class-1}, {visibility-mode} {base-class-2}    
 {
     //class-body
 }

@@ -20,7 +20,7 @@ using namespace std;
 class Shop  
 {
 
-    // All Members of class by default are private until made explicitly public.
+    // All Members/Attributes of a class by default are private until made explicitly public.
 
     string itemName[100]; // Attribute 1: An array 'itemName' to hold 100 string values.
     int itemPrice[100];   // Attribute 2: An array 'itemPrice' to hold 100 int values
@@ -67,62 +67,6 @@ int main()
     MunnaStore.setItem();
 
     // Displaying the list of items.
-    MunnaStore.getItem();
-
-    return 0;
-}
-```
-
-## Code without comments.
-
-```cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
-class Shop  
-{
-    string itemName[100]; 
-    int itemPrice[100];
-    int counter;
-
-public:
-    void initCounter(void) { counter = 0; }
-    void getItem(void);
-    void setItem(void);
-};
-
-void Shop ::setItem()
-{
-    counter++;
-
-    cout << "Enter Item No." << counter << " Name: ";
-    cin >> itemName[counter];
-    cout << "Enter Item No." << counter << " Price: ";
-    cin >> itemPrice[counter];
-}
-
-void Shop ::getItem()
-{
-    for (int i = 1; i <= counter; i++)
-    {
-        cout << endl;
-        cout << "Item Name: " << itemName[i] << endl;
-        cout << "Item Price: " << itemPrice[i] << endl;
-        cout << endl;
-    }
-}
-
-int main()
-{
-    Shop MunnaStore;
-
-    MunnaStore.initCounter();
-
-    MunnaStore.setItem();
-    MunnaStore.setItem();
-    MunnaStore.setItem();
-
     MunnaStore.getItem();
 
     return 0;

@@ -48,7 +48,7 @@ int main()
     derived_obj.display(); // The value of base_var is 34
                            // The value of derived_var is 40
 
-    // Also, we cannot access the exclusive data member (derived_var) of the Derived class object (derived_obj) directly using a Base class pointer (base_ptr).
+    // Also, we cannot access the data member (derived_var) of the Derived class object (derived_obj) directly using a Base class pointer (base_ptr).
     //  cout<<"The value of (derived_var) of (derived_obj) accessed through (base_ptr) is "<<(base_ptr->derived_var)<<endl;  //This code will throw error.
     // But, we can access any Base class data member of a derived class object through a Base class pointer which stores the address of the Derived class object.
     cout << "The value of (base_var) of (derived_obj) accessed through (base_ptr) is " << (base_ptr->base_var) << endl;

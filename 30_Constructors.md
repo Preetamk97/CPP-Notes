@@ -48,7 +48,7 @@ int main()
 *********
 1. Constructor should be declared under the public section of the class.
 2. Constructor has the same name as class.
-3. Constructors do not have return datatype.
+3. ***Constructors do not have return datatype.
 4. Gets invoked at the very instant when an object is created. 
 5. Constructor can take void as parameter -- Default/Non-Parametrized Constructor.
 6. Constructors which take some parameter -----  Parameterized Constructor.

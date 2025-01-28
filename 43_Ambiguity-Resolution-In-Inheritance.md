@@ -21,7 +21,10 @@ class Base2 {
 };
 
 class Derived : public Base1, public Base2 {
-
+    // Inherited from Base1 class:
+        //void greet(void) ---> public
+    // Inherited from Base2 class:  
+        //void greet(void) ---> public
 };
 
 // Driver Code
@@ -62,6 +65,10 @@ class Base2 {
 };
 
 class Derived : public Base1, public Base2 {
+    // Inherited from Base1 class:
+        //void greet(void) ---> public
+    // Inherited from Base2 class:  
+        //void greet(void) ---> public
     public:
         void greet(void){
             Base2 :: greet();
@@ -101,6 +108,8 @@ class Base1 {
 };
 
 class Base2 : public Base1 {  //class Base2 inheriting from class Base1
+    // Inherited from Base1 class:
+        //  void say(void) ---> public mode
     public:
         void say(void){
             cout << "The world is so beautiful today" << endl;
@@ -109,6 +118,10 @@ class Base2 : public Base1 {  //class Base2 inheriting from class Base1
 };
 
 class Derived : public Base2 {
+    // Inherited from Base2 class:
+        //  void say(void){
+        //     cout << "The world is so beautiful today" << endl;
+        // }
 };
 
 // Driver Code

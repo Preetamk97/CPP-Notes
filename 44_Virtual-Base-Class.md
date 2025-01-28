@@ -74,6 +74,12 @@ class Student {   //This class is going to be our Virtual Base Class.
 };
 
 class TestMarks : virtual public Student {
+    // Inherited from Student Class:
+    // ----------------------------
+    // int roll_number --> protected
+    // void set_roll_no(int a) --> public
+    // void print_roll_no(void) --> public
+    // ---------------------------------
     protected:
         float maths, physics;
     public:
@@ -89,6 +95,12 @@ class TestMarks : virtual public Student {
 };
 
 class SportsMarks : public virtual Student {
+    // Inherited from Student Class:
+    // ----------------------------
+    // int roll_number --> protected
+    // void set_roll_no(int a) --> public
+    // void print_roll_no(void) --> public
+    // ---------------------------------
     protected:
         float score;
     public:
@@ -101,6 +113,24 @@ class SportsMarks : public virtual Student {
 };
 
 class Result : public TestMarks, public SportsMarks {
+    // Inherited from both TestMarks & SportsMarks Classes:
+    // -----------------------------------------------------
+    // int roll_number --> protected
+    // void set_roll_no(int a) --> public
+    // void print_roll_no(void) --> public
+
+    // Inherited from TestMarks Class:
+    // --------------------------------
+    // float maths, physics --> protected
+    // void set_marks(float m1, float m2) --> public
+    // void print_marks(void) --> public
+
+    // Inherited from SportsMarks Class:
+    // --------------------------------
+    // float score --> protected
+    // void set_score(float sc) --> public
+    // void print_score(void) --> public
+
     private:
         int total;
     public:

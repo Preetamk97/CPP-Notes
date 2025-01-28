@@ -17,7 +17,7 @@ using namespace std;
 // n = n * (n-1)!
 
 // An example of a Recursive Function.
-// Method for calculating the factorial of a number:
+// Calculating the factorial of a number:
 int factorial(int n) {
     if (n <= 1) {
         return 1;
@@ -73,7 +73,7 @@ int fibonacci(int n) {
 // fibonacci(4) = (fibonacci(1) + fibonacci(0)) + fibonacci(1) + fibonacci(1) + fibonacci(0)  //step 3
 // fibonacci(4) = 1 + 1 + 1 + 1 + 1 = 5  // step 4
 
-// In Actual Fibonacci Series : 1, 1, 2, 3
+// In Actual Fibonacci Series : 1, 1, 2, 3, 5
 
 // Driver Code:
 int main() {
