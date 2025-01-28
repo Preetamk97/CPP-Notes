@@ -2,7 +2,9 @@
 #include <iostream>
 using namespace std;
 
-/*
+// Syntax:
+//*********
+/**********
 template <class T1, class T2>
 class className {
     // body

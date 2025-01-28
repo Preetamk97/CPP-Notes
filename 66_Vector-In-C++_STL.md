@@ -9,7 +9,7 @@
 // 2. It has begin() and end() functions.
 // 3. It has iterators, so you can use it with algorithms and other STL containers.
 
-// std::vector is a sequence container class template in the Standard Template Library (STL) that provides a dynamic array-like container for holding a sequence of elements. std::vector has the following features:
+// std::vector is a 'sequence container' class template in the Standard Template Library (STL) that provides a dynamic array-like container for holding a sequence of elements. std::vector has the following features:
 
 // 1. It has a defined size() function that returns the number of elements in the vector.
 // 2. It has begin() and end() functions that return iterators pointing to the first and one past the last element of the vector, respectively.
