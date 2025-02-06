@@ -31,11 +31,21 @@ int main()
     // int a = 4;
     // int b = 8;
     int a = 14, b = 15;
-    float pi = 3.14;
+    float pi = 3.14, c = 3.14f, d = 3.14F;
+    double d = 6.7899;
     char alpha = 'a';
     bool is_True = false;
     // false = 0
     // true = 1
+    long d = 123456789, e = 123456789L, f = 123456789l;
+    long long g = 1234567890123456789, h = 1234567890123456789LL, i = 1234567890123456789ll;
+    long double j = 3.141592653589793238462643383279;
+
+    size_t k = 1234567890;
+    // size_t is an unsigned integral datatype. 
+    // It can only be used for storing NON-NEGATIVE integral type values.
+    // It can be used for storing any POSITIVE value of integer, long, or long long datatype. 
+    
 
     cout << "This is Tutorial 4.\nHere, the value of a = " << a << ".\nAnd, the value of b = " << b <<".";
     //"\n" is used to give line breaks in the output.

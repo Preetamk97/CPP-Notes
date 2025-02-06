@@ -85,7 +85,7 @@ int main() {
 ![](Img_Files/chapter16/output-2.png)
 
 
-## Method 2: Reference Variables
+## Method 2: Using Reference Variables
 ---
 ```cpp
 // Program to Swap the Value of 2 Variables

@@ -50,14 +50,12 @@ int main() {
 ```
 **[The addresses of "from where the function is called" and "the definition of the function" are different.]**
 
-Here, during the compilation process, whenever the function `productOf(x,y)` is called, first the actual parameters (x=4, y=5) are copied from the calling function address and passed to the function definition address as actual parameters. There the function does the calculation (a * b) and returns the value 20 back to the memory address of the calling function. And, this process repeats every time the function `productOf(x,y)` gets called in the program. Now, this increases our compilation overhead for the program.
+Here, during the compilation process, whenever the function `productOf(x,y)` is called, first the actual parameters (x=4, y=5) are copied from the calling function address and passed to the function definition address as actual parameters. There the function does the calculation (a * b) and returns the value 20 back to the memory address of the calling function. And, this process repeats every time the function `productOf(x,y)` gets called in the program. Now, this increases our compilation overhead (time required for the compiler to convert the C++ code into executable machine code) for the program.
 
 
 ## Using Inline Keyword
 
 **To inline a function, place the keyword inline before the function name and define the function before any calls are made to the function.**
-
-**The compiler <u>ignores the `inline` qualifier</u> in case <u>the defined function contains <span style="color: red">*more than a single line of code*</span></u> in order to optimse the code - on its own.**
 
 ```cpp
 #include <iostream>
@@ -80,7 +78,7 @@ int main() {
 }
 ```
 
-If we make a function as inline, then the compiler places a copy of the code of that function at each point where the function is called during compilation time.
+**If we make a function `inline`, the compiler may place a copy of the code of that function at each point where the function is called during compilation time. However, the compiler may ignore the `inline` qualifier if it determines that inlining the function would not be beneficial for optimization, regardless of the number of lines of code in the function.**
 
 In this case, after the compilation step of the program execution is completed, *the readable code version* of the *executable binary machine code* that makes the .exe file of the program, looks somewhat like this -
 

@@ -36,6 +36,7 @@ class ScientificCalculator {
             cout<< "The value of cos(a)  is : "<< cos(a) << endl;
             cout<< "The value of pow(a,b) is : "<< pow(a,b) << endl;
             cout<< "The value of sqrt(a) is : "<< sqrt(a) << endl;
+            cout<< "The value of abs(a) is : " << abs(a) << endl;
         }
 };
 

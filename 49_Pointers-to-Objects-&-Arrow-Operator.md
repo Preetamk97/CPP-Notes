@@ -3,8 +3,8 @@
 using namespace std;
 
 class Complex {
-    int real, imaginary;
     public:
+        int real, imaginary;
         void setData(int a, int b){
             real = a;
             imaginary = b;
@@ -29,6 +29,10 @@ int main()
     // c1.setData(4,50);
     // (*ptr).setData(4,50);  //Accessing the object at the address that is strored inside pointer ptr.
     ptr->setData(4,50); // Doing the same work using Arrow Operator - Only works for Object Pointers.
+
+    // Accessing the data using pointer ptr and arrow operator.
+    std::cout << "Real part of the complex object c1 :" << ptr->real << std::endl;
+    std::cout << "Imaginary part of the complex object c1 :" << ptr->imaginary << std::endl;
 
     // c1.getData();
     // (*ptr).getData();  //Accessing the object at the address that is strored inside pointer ptr.

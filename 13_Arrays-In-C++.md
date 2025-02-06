@@ -92,16 +92,41 @@ int main () {
     int marks[] = {123, 456, 789, 159};
 
     // Making a pointer variable for the just declared array.
-    int* p = marks;
-    // Note: For Arrays, you dont have to write as '&marks'. Because, in C++, the arrays theselves work as pointers who store the addresses of the variables that are listed within the array.
+    int* p;
 
+    // Assign the address of marks[0] to pointer p.
+    p = marks;
+    // We can use p=&marks[0];(both are same)
+
+    // Pointer Arithmetics
+    //******************** */
+
+    // Using the pointer to print the values of the array.
     cout << "Value of marks[0] is " << *p << endl;      // First Element.
     cout << "Value of marks[1] is " << *(p+1) << endl;  // Second Element.
     cout << "Value of marks[2] is " << *(p+2) << endl;  // Third Element.
     cout << "Value of marks[3] is " << *(p+3) << endl;  // Fourth Element.
-  
-    cout << "Value of *(p++) is " << *(p++) << endl;    // First Element. //print *p then increment the pointer to *(p+1)
-    cout << "Value of *(++p) is " << *(++p) << endl;    // Third Element.  //increment the pointer from *(p+1) to *(p+2) then print *(p+2)
+    
+    //print *p then increment the pointer to *(p+1)
+    cout << "Value of *(p++) is " << *(p++) << endl;    // First Element. 
+
+    //increment the pointer from *(p+1) to *(p+2) then print *(p+2)
+    cout << "Value of *(++p) is " << *(++p) << endl;    // Third Element. 
+
+    //decrement the pointer from *(p+2) to *(p+1) then print *(p+1)
+    cout << "Value of *(--p) is " << *(--p) << endl;    // Second Element.
+
+
+    // Another Syntax for using array pointers
+    //****************************************** */
+
+    // Assign the address of marks[0] to pointer p.
+    p = marks;
+
+    cout << "Value of marks[0] is " << p[0] << endl;      // First Element.
+    cout << "Value of marks[1] is " << p[1] << endl;  // Second Element.
+    cout << "Value of marks[2] is " << p[2] << endl;  // Third Element.
+    cout << "Value of marks[3] is " << p[3] << endl;  // Fourth Element. 
 
     return 0;
 }
@@ -110,3 +135,16 @@ int main () {
 ### Output:
 ---
 ![](Img_Files/chapter13/output-3.png)
+
+
+# Pointers for ixj Array
+
+Consider pointer notation for the two-dimensional numeric arrays. consider the following declaration
+
+```
+int nums[2][3]  =  { { 16, 18, 20 }, { 25, 26, 27 } };
+```
+
+**In general, nums[ i ][ j ] is equivalent to *(*(nums+i)+j)**
+
+![ixj_array_pointer_table](Img_Files\chapter13\ixj_array_pointer_table.png)

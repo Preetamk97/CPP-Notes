@@ -65,7 +65,7 @@ using namespace std;
 // Function Prototyping
 //************************
 // We are instructing our program to lookout for a function 'int sum(int a, int b)' which will be used/called in the 'int main()' function but is defined somewhere in the later stages of the program (after 'int main()').
-int sum (int a, int b);
+int sum(int a, int b);
 
 // Another way of function protyping:
 // int sum (int, int);

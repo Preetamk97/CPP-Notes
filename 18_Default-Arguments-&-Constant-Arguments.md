@@ -44,6 +44,7 @@ float circle_area;
 
 int area_of_circle(float radius, const float pi = 3.14){
     // value of 'pi' cannot be modified within this function.
+    // pi = 16; // This line of code will give an error
     return pi * radius * radius;
 }
 
